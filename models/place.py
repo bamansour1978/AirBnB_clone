@@ -14,7 +14,7 @@ class Place(BaseModel):
         number_rooms: The number of rooms of the place (int)
         number_bathrooms : The number of bathrooms of the place  (int)
         max_guest : The maximum number of guests of the place  (int)
-        price_by_night (int): The price by night of the place.
+        price_by_night : The price by night of the place  (int)
         latitude (float): The latitude of the place.
         longitude (float): The longitude of the place.
         amenity_ids (list): A list of Amenity ids.
