@@ -10,7 +10,7 @@ class Place(BaseModel):
         city_id : The City id (str).
         user_id : The User id (str)
         name : The name of the place (str)
-        description (str): The description of the place(str)
+        description : The description of the place(str)
         number_rooms (int): The number of rooms of the place (str)
         number_bathrooms (int): The number of bathrooms of the place.
         max_guest (int): The maximum number of guests of the place.
