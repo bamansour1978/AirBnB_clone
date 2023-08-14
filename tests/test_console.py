@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-"""Defines unittests for console.py.
+"""Unittests for console.py.
 
 Unittest classes:
-    TestHBNBCommand_prompting
-    TestHBNBCommand_help
-    TestHBNBCommand_exit
-    TestHBNBCommand_create
-    TestHBNBCommand_show
-    TestHBNBCommand_all
-    TestHBNBCommand_destroy
-    TestHBNBCommand_update
+    TestCommand_prompting
+    TestCommand_help
+    TestCommand_exit
+    TestCommand_create
+    TestCommand_show
+    TestCommand_all
+    TestCommand_destroy
+    TestCommand_update
 """
 import os
 import sys
@@ -50,7 +50,7 @@ class TestHBNBCommand_help(unittest.TestCase):
             self.assertEqual(h, output.getvalue().strip())
 
     def test_help_EOF(self):
-        h = "EOF signal to exit the program."
+        h = "EOF  to exit the program."
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help EOF"))
             self.assertEqual(h, output.getvalue().strip())
