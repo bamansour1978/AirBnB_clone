@@ -2,14 +2,14 @@
 """Unittests for console.py.
 
 Unittest classes:
-    TestCommand_prompting
-    TestCommand_help
-    TestCommand_exit
-    TestCommand_create
-    TestCommand_show
-    TestCommand_all
-    TestCommand_destroy
-    TestCommand_update
+    Test_prompting
+    Test_help
+    Test_exit
+    Test_create
+    Test_show
+    Test_all
+    Test_destroy
+    Test_update
 """
 import os
 import sys
